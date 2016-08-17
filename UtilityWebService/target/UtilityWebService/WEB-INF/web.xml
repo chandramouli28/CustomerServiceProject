@@ -24,8 +24,8 @@
 		</init-param>
 		<load-on-startup>2</load-on-startup>
 	</servlet>
-	
-	
+
+
 	<servlet>
 		<servlet-name>spring</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -41,7 +41,7 @@
 		<servlet-name>CXFServlet</servlet-name>
 		<url-pattern>/services/*</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet-mapping>
 		<servlet-name>spring</servlet-name>
 		<url-pattern>/listener/*</url-pattern>

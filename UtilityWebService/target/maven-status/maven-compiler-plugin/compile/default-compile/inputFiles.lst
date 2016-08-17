@@ -1,12 +1,12 @@
-C:\BCJ-May16\Development\Workspace\Adv Java\UtilityWebService\src\main\java\com\customerservice\customerdetails\service\MessageService.java
-C:\BCJ-May16\Development\Workspace\Adv Java\UtilityWebService\src\main\java\com\customerservice\customerdetails\service\UtilityService.java
-C:\BCJ-May16\Development\Workspace\Adv Java\UtilityWebService\src\main\java\com\customerservice\customerdetails\util\HibernateUtil.java
-C:\BCJ-May16\Development\Workspace\Adv Java\UtilityWebService\src\main\java\com\customerservice\customerdetails\dao\MessageServiceDao.java
-C:\BCJ-May16\Development\Workspace\Adv Java\UtilityWebService\src\main\java\com\customerservice\customerdetails\jms\JMSListener.java
-C:\BCJ-May16\Development\Workspace\Adv Java\UtilityWebService\src\main\java\com\customerservice\customerdetails\dao\CustomerServiceDao.java
-C:\BCJ-May16\Development\Workspace\Adv Java\UtilityWebService\src\main\java\com\customerservice\customerdetails\webservice\ServicePlanWS.java
-C:\BCJ-May16\Development\Workspace\Adv Java\UtilityWebService\src\main\java\com\customerservice\customerdetails\model\Customer.java
-C:\BCJ-May16\Development\Workspace\Adv Java\UtilityWebService\src\main\java\com\customerservice\customerdetails\dao\ServicePlanDAO.java
-C:\BCJ-May16\Development\Workspace\Adv Java\UtilityWebService\src\main\java\com\customerservice\customerdetails\webservice\CustomerServiceWS.java
-C:\BCJ-May16\Development\Workspace\Adv Java\UtilityWebService\src\main\java\com\customerservice\customerdetails\model\ServicePlan.java
-C:\BCJ-May16\Development\Workspace\Adv Java\UtilityWebService\src\main\java\com\customerservice\customerdetails\service\CustomerService.java
+C:\BCJ-May16\Development\Workspace\CustomerService-Repo\UtilityWebService\src\main\java\com\customerservice\customerdetails\dao\ServicePlanDAO.java
+C:\BCJ-May16\Development\Workspace\CustomerService-Repo\UtilityWebService\src\main\java\com\customerservice\customerdetails\service\CustomerService.java
+C:\BCJ-May16\Development\Workspace\CustomerService-Repo\UtilityWebService\src\main\java\com\customerservice\customerdetails\service\MessageService.java
+C:\BCJ-May16\Development\Workspace\CustomerService-Repo\UtilityWebService\src\main\java\com\customerservice\customerdetails\service\UtilityService.java
+C:\BCJ-May16\Development\Workspace\CustomerService-Repo\UtilityWebService\src\main\java\com\customerservice\customerdetails\dao\MessageServiceDao.java
+C:\BCJ-May16\Development\Workspace\CustomerService-Repo\UtilityWebService\src\main\java\com\customerservice\customerdetails\util\HibernateUtil.java
+C:\BCJ-May16\Development\Workspace\CustomerService-Repo\UtilityWebService\src\main\java\com\customerservice\customerdetails\model\Customer.java
+C:\BCJ-May16\Development\Workspace\CustomerService-Repo\UtilityWebService\src\main\java\com\customerservice\customerdetails\jms\JMSListener.java
+C:\BCJ-May16\Development\Workspace\CustomerService-Repo\UtilityWebService\src\main\java\com\customerservice\customerdetails\model\ServicePlan.java
+C:\BCJ-May16\Development\Workspace\CustomerService-Repo\UtilityWebService\src\main\java\com\customerservice\customerdetails\webservice\ServicePlanWS.java
+C:\BCJ-May16\Development\Workspace\CustomerService-Repo\UtilityWebService\src\main\java\com\customerservice\customerdetails\webservice\CustomerServiceWS.java
+C:\BCJ-May16\Development\Workspace\CustomerService-Repo\UtilityWebService\src\main\java\com\customerservice\customerdetails\dao\CustomerServiceDao.java
