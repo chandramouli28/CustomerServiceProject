@@ -190,7 +190,7 @@
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
-			<version>3.6.4.Final</version>
+			<version>${hibernate.version}</version>
 		</dependency>
 
 		<!-- for JPA, use hibernate-entitymanager instead of hibernate-core -->
@@ -305,14 +305,14 @@
 				</executions>
 			</plugin>
 
-			<plugin>
+			<!-- <plugin>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<configuration>
 					<includes>
 						<include>**/*Tests.java</include>
 					</includes>
 				</configuration>
-			</plugin>
+			</plugin> -->
 		</plugins>
 	</build>
 </project>

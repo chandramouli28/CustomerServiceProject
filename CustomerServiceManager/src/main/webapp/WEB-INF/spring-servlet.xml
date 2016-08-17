@@ -10,6 +10,8 @@
 	<context:component-scan	base-package="com.customerservice.customerdetails.registration.controller" /><context:annotation-config />
 	
 	<import resource="JMSSender.xml"/>
+	<import resource="hibernate.cfg.xml"/>
+	
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/jsp/" />

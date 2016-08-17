@@ -17,7 +17,7 @@ import com.sun.jersey.api.client.WebResource;
 
 public class CustomerServiceHandler {
 
-	String urlHost = "http://localhost:8080/UtilityWebService/";
+	String urlHost = "http://localhost:8080/UtilityWebService/RestWS/cust/";
 	final static Logger logger = Logger.getLogger(CustomerServiceHandler.class);
 	
 	public CustomerServiceHandler(CustomerServiceDao custServiceDao, JmsQueueSender queueSender) {
@@ -56,7 +56,7 @@ public class CustomerServiceHandler {
 		try {
 			Client client = Client.create();
 
-			WebResource webResource = client.resource("http://localhost:7001/UtilityWebService/resources/cust/" + c_id);
+			WebResource webResource = client.resource(urlHost + c_id);
 			ClientResponse response = webResource.accept("application/json").get(ClientResponse.class);
 
 			if (response.getStatus() != 200) {

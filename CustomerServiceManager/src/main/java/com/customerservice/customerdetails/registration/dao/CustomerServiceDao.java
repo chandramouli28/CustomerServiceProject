@@ -4,15 +4,19 @@ package com.customerservice.customerdetails.registration.dao;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import com.customerservice.customerdetails.registration.model.Customer;
-import com.customerservice.customerdetails.registration.util.HibernateUtil;
 
 public class CustomerServiceDao {
+	
+	@Autowired
+	SessionFactory mySessionFactory;
 
 	public Integer saveCustomer(Customer customer) {
 
-		Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+		Session session = mySessionFactory.getCurrentSession();
 	
 		Integer c_Id = null;
 		try {
