@@ -26,9 +26,9 @@ public class CustomerServiceWS {
 		Customer customer = custService.getCustomerDetails(c_id);
 		
 		if(customer == null){
-			logger.info("Rest call fetched data");			
+			logger.info("Rest call failed to get customer");			
 		}else{
-			logger.info("Rest call faled to get customer");
+			logger.info("Rest call fetched data");
 		}
 
 		return customer;
