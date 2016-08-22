@@ -312,9 +312,9 @@
 				</executions>
 			</plugin>
 
-			<plugin> <artifactId>maven-surefire-plugin</artifactId> <configuration> 
+<!-- 			<plugin> <artifactId>maven-surefire-plugin</artifactId> <configuration> 
 				<includes> <include>**/*Tests.java</include> </includes> </configuration> 
-				</plugin>
+				</plugin> -->
 		</plugins>
 	</build>
 </project>
