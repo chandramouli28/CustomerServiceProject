@@ -1,4 +1,4 @@
-package com.customerservice.customerdetails.registration.model;
+package com.utilityservicemanager.customerservice.registration.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -77,6 +77,11 @@ public class Customer {
 
 	public void setService_id(String service_id) {
 		this.service_id = service_id;
-	}	
+	}
+	
+	@Override
+	public String toString(){
+		return (this.username + " " + this.email + " " + this.phoneNum);
+	}
 	
 }

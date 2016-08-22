@@ -1,4 +1,4 @@
-package com.customerservice.customerdetails.registration.dao;
+package com.utilityservicemanager.customerservice.registration.dao;
 
 
 
@@ -7,7 +7,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.customerservice.customerdetails.registration.model.Customer;
+import com.utilityservicemanager.customerservice.registration.model.Customer;
 
 public class CustomerServiceDao {
 	

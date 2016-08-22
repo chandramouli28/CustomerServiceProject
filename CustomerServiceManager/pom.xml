@@ -2,11 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.customerservice.windows.registration</groupId>
-	<artifactId>CustomerServiceManager</artifactId>
+	<groupId>com.utilityservice.registration</groupId>
+	<artifactId>UtilityService</artifactId>
 	<packaging>war</packaging>
 	<version>1.0.0-SNAPSHOT</version>
-	<name>CustomerServiceManager Maven Webapp</name>
+	<name>UtilityService Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 
 
@@ -252,7 +252,7 @@
 
 	</dependencies>
 	<build>
-		<finalName>CustomerServiceManager</finalName>
+		<finalName>UtilityService</finalName>
 		<plugins>
 
 			<plugin>
@@ -282,7 +282,7 @@
 										<extraarg>-client</extraarg>
 										<extraarg>-verbose</extraarg>
 										<extraarg>-p</extraarg>
-										<extraarg>http://webservice.customerdetails.customerservice.com/=com.customerservice.customerdetails.webservice</extraarg>
+										<extraarg>http://webservice.customerdetails.customerservice.com/=com.utilityservicemanager.customerservice.registration.webservice</extraarg>
 									</extraargs>
 									<wsdl>
 										${basedir}/src/main/resources/ServicePlan.wsdl
@@ -312,9 +312,9 @@
 				</executions>
 			</plugin>
 
-			<!-- <plugin> <artifactId>maven-surefire-plugin</artifactId> <configuration> 
+			<plugin> <artifactId>maven-surefire-plugin</artifactId> <configuration> 
 				<includes> <include>**/*Tests.java</include> </includes> </configuration> 
-				</plugin> -->
+				</plugin>
 		</plugins>
 	</build>
 </project>

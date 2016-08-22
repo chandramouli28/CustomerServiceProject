@@ -1,4 +1,4 @@
-package com.customerservice.customerdetails.registration.model;
+package com.utilityservicemanager.customerservice.registration.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -14,7 +14,7 @@ public class ServicePlan {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="id", unique = true, nullable = false)
-	private Integer id;
+	private String id;
 	
 	@Column(name="service_plan", unique = true, nullable = true)
 	private String service_plan;
@@ -25,11 +25,10 @@ public class ServicePlan {
 	@Column(name="end_date", nullable = true)
 	private String end_date;
 	
-	
-	public Integer getId() {
+	public String getId() {
 		return id;
 	}
-	public void setId(Integer id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 	public String getService_plan() {

@@ -1,4 +1,4 @@
-package com.customerservice.customerdetails.registration.jms;
+package com.utilityservicemanager.customerservice.registration.jms;
 
 import javax.jms.JMSException;
 import javax.jms.Message;

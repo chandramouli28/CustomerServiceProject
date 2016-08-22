@@ -1,19 +1,19 @@
 
-package com.customerservice.customerdetails.registration.service;
+package com.utilityservicemanager.customerservice.registration.service;
 
 import java.util.List;
 
 import org.apache.log4j.Logger;
 
-import com.customerservice.customerdetails.registration.dao.CustomerServiceDao;
-import com.customerservice.customerdetails.registration.jms.JmsQueueSender;
-import com.customerservice.customerdetails.registration.model.Customer;
-import com.customerservice.customerdetails.webservice.ServicePlan;
-import com.customerservice.customerdetails.webservice.ServicePlanWS;
-import com.customerservice.customerdetails.webservice.ServicePlanWSService;
 import com.sun.jersey.api.client.Client;
 import com.sun.jersey.api.client.ClientResponse;
 import com.sun.jersey.api.client.WebResource;
+import com.utilityservicemanager.customerservice.registration.dao.CustomerServiceDao;
+import com.utilityservicemanager.customerservice.registration.jms.JmsQueueSender;
+import com.utilityservicemanager.customerservice.registration.model.Customer;
+import com.utilityservicemanager.customerservice.registration.webservice.ServicePlan;
+import com.utilityservicemanager.customerservice.registration.webservice.ServicePlanWS;
+import com.utilityservicemanager.customerservice.registration.webservice.ServicePlanWSService;
 
 public class CustomerServiceHandler {
 
@@ -29,23 +29,38 @@ public class CustomerServiceHandler {
 	private CustomerServiceDao custServiceDao;
 
 	public Customer saveCustomer(Customer customer) {
-
+		
+		Customer cust = null;
+		ServicePlan servicepPlan = null;
+		
 		Integer c_id = custServiceDao.saveCustomer(customer);
-		logger.info("customer created in the database");
-
-		Customer cust = getCustomer(c_id);
-		logger.info("customer details fetched from REST call");
+		
+		if(c_id != 0){
+			logger.info("customer created in the database");
+			cust = getCustomer(c_id);
+		}else{
+			logger.info("Failed to create customer");
+			return null;
+		}
+		
+		if(cust != null){
+			logger.info("customer details fetched from REST call");
+		}else{
+			logger.info("Rest call failed");
+		}
 		
 		List<ServicePlan> servList = getServiceList();
 
 		if (servList != null) {
-			cust.setService_id(String.valueOf(servList.get(0).getId()));
-			queueSender.sendMessage(String.valueOf(c_id) + " " + String.valueOf(servList.get(0).getId()));
+			
+			servicepPlan = servList.get(0);
+			cust.setService_id(servicepPlan.getId());
+			queueSender.sendMessage(String.valueOf(c_id) + " " + servicepPlan.getId());
 			logger.info("Service Plans retrieved from db");
 		}else{
 			logger.error("No Service Plans retrieved");
 		}
-
+		
 		return cust;
 	}
 

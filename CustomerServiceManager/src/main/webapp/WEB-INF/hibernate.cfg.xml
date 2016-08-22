@@ -29,10 +29,10 @@
 		<property name="annotatedClasses">
 			<list>
 				<value>
-					com.customerservice.customerdetails.registration.model.Customer
+					com.utilityservicemanager.customerservice.registration.model.Customer
 				</value>
 				<value>
-					com.customerservice.customerdetails.registration.model.ServicePlan
+					com.utilityservicemanager.customerservice.registration.model.ServicePlan
 				</value>
 			</list>
 		</property>

@@ -7,7 +7,7 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
 		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
 	
-	<context:component-scan	base-package="com.customerservice.customerdetails.registration.controller" /><context:annotation-config />
+	<context:component-scan	base-package="com.utilityservicemanager.customerservice.registration.controller" /><context:annotation-config />
 	
 	<import resource="JMSSender.xml"/>
 	<import resource="hibernate.cfg.xml"/>
@@ -18,10 +18,10 @@
 		<property name="suffix" value=".jsp" />
 	</bean>
 	
-	<bean id="custServiceDao" class="com.customerservice.customerdetails.registration.dao.CustomerServiceDao">
+	<bean id="custServiceDao" class="com.utilityservicemanager.customerservice.registration.dao.CustomerServiceDao">
  	</bean>
- 	<bean id="queueSender" class = "com.customerservice.customerdetails.registration.jms.JmsQueueSender"/>
-	<bean id="customerServHandler" class="com.customerservice.customerdetails.registration.service.CustomerServiceHandler">
+ 	<bean id="queueSender" class = "com.utilityservicemanager.customerservice.registration.jms.JmsQueueSender"/>
+	<bean id="customerServHandler" class="com.utilityservicemanager.customerservice.registration.service.CustomerServiceHandler">
  		<constructor-arg name= "custServiceDao" ref="custServiceDao"/>
  		<constructor-arg name ="queueSender" ref="queueSender"/>
  	</bean>

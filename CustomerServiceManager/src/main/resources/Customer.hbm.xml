@@ -4,7 +4,7 @@
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
-<hibernate-mapping package="com.customerservice.customerdetails.registration.model">
+<hibernate-mapping package="com.utilityservicemanager.customerservice.registration.model">
 <class name="Customer" table="CUSTOMER">
         <id name="id" column="c_id">
             <generator class="increment"/>
