@@ -282,7 +282,7 @@
 										<extraarg>-client</extraarg>
 										<extraarg>-verbose</extraarg>
 										<extraarg>-p</extraarg>
-										<extraarg>http://webservice.customerdetails.customerservice.com/=com.utilityservicemanager.customerservice.registration.webservice</extraarg>
+										<extraarg>http://webservice.customerservice.utilitywebservice.com/=com.utilityservicemanager.customerservice.registration.webservice</extraarg>
 									</extraargs>
 									<wsdl>
 										${basedir}/src/main/resources/ServicePlan.wsdl

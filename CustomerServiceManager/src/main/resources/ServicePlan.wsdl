@@ -1,6 +1,6 @@
-<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://webservice.customerdetails.customerservice.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="ServicePlanWSService" targetNamespace="http://webservice.customerdetails.customerservice.com/">
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://webservice.customerservice.utilitywebservice.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="ServicePlanWSService" targetNamespace="http://webservice.customerservice.utilitywebservice.com/">
   <wsdl:types>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://webservice.customerdetails.customerservice.com/" elementFormDefault="unqualified" targetNamespace="http://webservice.customerdetails.customerservice.com/" version="1.0">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://webservice.customerservice.utilitywebservice.com/" elementFormDefault="unqualified" targetNamespace="http://webservice.customerservice.utilitywebservice.com/" version="1.0">
 
   <xs:element name="getServicePlan" type="tns:getServicePlan"/>
 

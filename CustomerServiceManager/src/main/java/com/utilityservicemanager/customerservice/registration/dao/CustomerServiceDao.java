@@ -16,18 +16,16 @@ public class CustomerServiceDao {
 
 	public Integer saveCustomer(Customer customer) {
 
-		Session session = mySessionFactory.getCurrentSession();
+		Session session = mySessionFactory.openSession();
 	
 		Integer c_Id = null;
 		try {
-			session.getTransaction().begin();
 			Customer cust = new Customer();
 			cust.setUsername(customer.getUsername());
 			cust.setPassword(customer.getPassword());
 			cust.setEmail(customer.getEmail());
 			cust.setPhoneNum(customer.getPhoneNum());
 			c_Id = (Integer) session.save(cust);
-			session.getTransaction().commit();
 		} catch (HibernateException e) {
 			e.printStackTrace();
 			session.close();
