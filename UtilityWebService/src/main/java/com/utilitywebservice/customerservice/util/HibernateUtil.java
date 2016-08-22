@@ -1,4 +1,4 @@
-package com.customerservice.customerdetails.util;
+package com.utilitywebservice.customerservice.util;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;

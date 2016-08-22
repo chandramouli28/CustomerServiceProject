@@ -1,4 +1,4 @@
-package com.customerservice.customerdetails.model;
+package com.utilitywebservice.customerservice.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

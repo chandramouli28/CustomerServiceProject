@@ -1,9 +1,9 @@
-package com.customerservice.customerdetails.service;
+package com.utilitywebservice.customerservice.service;
 
 import java.util.List;
 
-import com.customerservice.customerdetails.dao.ServicePlanDAO;
-import com.customerservice.customerdetails.model.ServicePlan;
+import com.utilitywebservice.customerservice.dao.ServicePlanDAO;
+import com.utilitywebservice.customerservice.model.ServicePlan;
 
 public class UtilityService {
 

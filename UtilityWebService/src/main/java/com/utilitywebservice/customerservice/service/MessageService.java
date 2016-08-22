@@ -1,6 +1,6 @@
-package com.customerservice.customerdetails.service;
+package com.utilitywebservice.customerservice.service;
 
-import com.customerservice.customerdetails.dao.MessageServiceDao;
+import com.utilitywebservice.customerservice.dao.MessageServiceDao;
 
 public class MessageService {
 

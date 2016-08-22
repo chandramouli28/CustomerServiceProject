@@ -26,8 +26,8 @@
 
         <!-- Mapping files -->
        <!--  <mapping resource="Customer.hbm.xml"/> -->
-       <mapping class="com.customerservice.customerdetails.model.Customer"/>
-       <mapping class="com.customerservice.customerdetails.model.ServicePlan"/>
+       <mapping class="com.utilitywebservice.customerservice.model.Customer"/>
+       <mapping class="com.utilitywebservice.customerservice.model.ServicePlan"/>
        
     </session-factory>
 

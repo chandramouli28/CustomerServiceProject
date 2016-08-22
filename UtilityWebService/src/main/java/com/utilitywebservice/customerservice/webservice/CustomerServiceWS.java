@@ -1,4 +1,4 @@
-package com.customerservice.customerdetails.webservice;
+package com.utilitywebservice.customerservice.webservice;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -7,8 +7,8 @@ import javax.ws.rs.Produces;
 
 import org.apache.log4j.Logger;
 
-import com.customerservice.customerdetails.model.Customer;
-import com.customerservice.customerdetails.service.CustomerService;
+import com.utilitywebservice.customerservice.model.Customer;
+import com.utilitywebservice.customerservice.service.CustomerService;
 
 @Path("/cust")
 @Produces("application/json")

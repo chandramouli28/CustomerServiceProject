@@ -1,10 +1,10 @@
-package com.customerservice.customerdetails.dao;
+package com.utilitywebservice.customerservice.dao;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 
-import com.customerservice.customerdetails.model.Customer;
-import com.customerservice.customerdetails.util.HibernateUtil;
+import com.utilitywebservice.customerservice.model.Customer;
+import com.utilitywebservice.customerservice.util.HibernateUtil;
 
 public class MessageServiceDao {
 	

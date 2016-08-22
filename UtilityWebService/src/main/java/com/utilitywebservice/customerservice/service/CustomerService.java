@@ -1,7 +1,7 @@
-package com.customerservice.customerdetails.service;
+package com.utilitywebservice.customerservice.service;
 
-import com.customerservice.customerdetails.dao.CustomerServiceDao;
-import com.customerservice.customerdetails.model.Customer;
+import com.utilitywebservice.customerservice.dao.CustomerServiceDao;
+import com.utilitywebservice.customerservice.model.Customer;
 
 public class CustomerService{
 	

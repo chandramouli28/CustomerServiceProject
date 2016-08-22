@@ -1,4 +1,4 @@
-package com.customerservice.customerdetails.jms;
+package com.utilitywebservice.customerservice.jms;
 
 import javax.jms.JMSException;
 import javax.jms.MessageProducer;
@@ -9,7 +9,7 @@ import org.apache.activemq.command.ActiveMQTextMessage;
 import org.springframework.jms.listener.SessionAwareMessageListener;
 import org.springframework.stereotype.Component;
 
-import com.customerservice.customerdetails.service.MessageService;
+import com.utilitywebservice.customerservice.service.MessageService;
 
 @Component("JMSListener")
 public class JMSListener implements SessionAwareMessageListener<TextMessage> {

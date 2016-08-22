@@ -1,4 +1,4 @@
-package com.customerservice.customerdetails.webservice;
+package com.utilitywebservice.customerservice.webservice;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,8 +6,8 @@ import java.util.List;
 import javax.jws.WebMethod;
 import javax.jws.WebService;
 
-import com.customerservice.customerdetails.model.ServicePlan;
-import com.customerservice.customerdetails.service.UtilityService;
+import com.utilitywebservice.customerservice.model.ServicePlan;
+import com.utilitywebservice.customerservice.service.UtilityService;
 
 @WebService
 public class ServicePlanWS {

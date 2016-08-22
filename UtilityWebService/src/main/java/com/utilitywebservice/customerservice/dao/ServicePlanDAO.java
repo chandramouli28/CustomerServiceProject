@@ -1,4 +1,4 @@
-package com.customerservice.customerdetails.dao;
+package com.utilitywebservice.customerservice.dao;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,8 +6,8 @@ import java.util.List;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 
-import com.customerservice.customerdetails.model.ServicePlan;
-import com.customerservice.customerdetails.util.HibernateUtil;
+import com.utilitywebservice.customerservice.model.ServicePlan;
+import com.utilitywebservice.customerservice.util.HibernateUtil;
 
 public class ServicePlanDAO {
 	
